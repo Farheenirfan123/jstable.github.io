@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <center>
+        <button onclick="add()" >Add</button>
+        <button onclick="sub()" >Sub</button>
+        <button onclick="multiply()" >Multiply</button>
+        <button onclick="division()" >Divide</button>
+        <button onclick="signin()">Sign in</button>
+        <button onclick="signup()">Sign up</button>
+    </center> -->
+
+
+
+
+
+
+    <script>
+//Function
+
+function add(){
+    let num1 = parseInt(prompt("Enter 1st number"));
+    let num2 = parseInt(prompt("Enter 2nd number"));
+    let result = num1 + num2
+    document.write(result);
+
+}
+function sub(){
+    let num1 = parseInt(prompt("Enter 1st number"));
+    let num2 = parseInt(prompt("Enter 2nd number"));
+    let result = num1 - num2
+    document.write(result);
+
+}
+function multiply(){
+    let num1 = parseInt(prompt("Enter 1st number"));
+    let num2 = parseInt(prompt("Enter 2nd number"));
+    let result = num1 * num2
+    document.write(result);
+
+}   
+function division(){
+    let num1 = parseInt(prompt("Enter 1st number"));
+    let num2 = parseInt(prompt("Enter 2nd number"));
+    let result = num1 / num2
+    document.write(result);
+
+}   
+
+    function signin(){
+     prompt("Please Enter your name");
+     prompt("Email or phone");
+     prompt("Enter password");
+     prompt("Enter your age");
+     
+      document.write("You are login")
+    }
+
+    function signup(){
+     prompt("Enter name");
+     prompt("Enter email");
+       
+    let name ="Farheen"
+    let pwd = "far123"
+    let  user= "Aliza"
+    let pass = "ali12"
+
+    name == "Farheen" && pwd == "far123" || user == "Aliza" && pass== "ali12" ? console.log("true") : console.log("false");
+        
+    }
+
+    let i;
+    let num= 4
+
+    document.write("<center> <table border '2' cellpadding '50'>");
+    for( i=1; i<=10; i++){
+    document.write("<tr>")
+    document.write(`<td>${num}</td> <td>x</td> <td>${i}</td> <td>=</td> <td>${i*num}</td> `)
+    document.write("</tr>")
+    }
+    document.write("</center> </table>")
+   
+    // let a;
+    // for(a=1; a<20; a++){
+    //     document.write(`${a*2} even number <br>`)
+    // }
+    </script>
+</body>
+</html>
